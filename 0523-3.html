@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼태그 연습하기</title>
+    <style>
+        img      {max-width: 100%;}
+        #layout1 {max-width : 900px; margin:auto;}
+        header   {background: linear-gradient(orange,gold); padding:20px;} 
+        header h1 {margin:0; text-align: center;}
+        nav      {
+            height:300px; 
+            background: radial-gradient(circle, red 5%, green 60%, blue 90%);  
+            margin:20px auto; border-radius: 20px;
+            transition: 0.5s;
+        }
+        nav:hover {
+            background: radial-gradient(circle, skyblue 5%, orange 60%, #bc8f8f 90%);
+            transform: rotate(30deg);
+        }        
+        #layout2 {display: flex;}
+        #layout2 p {margin:0;}
+        #layout2 p::first-letter { font-size:2rem; border:2px solid red; background: rgba(0,0,255,  .5); border-radius:10px; padding-left:10px; padding-right:10px;}
+        #layout2 p:hover::first-letter {background:red;}
+        #layout2 p::first-letter:hover {background-color: red;}
+        main     {background-color: chartreuse; padding:20px; flex:2;}
+        main h2  {margin:0;}
+        /* main p:hover  {background-color: red; } */
+        aside    {background-color: cadetblue; padding:20px; flex:1;}
+        aside h3 {margin: 0;}
+        footer   {background-color: grey; padding:20px; text-align: center;}
+        footer h3 {margin:0;}
+
+        /* 폼태그 부분 */
+        form     {border:1px solid red; max-width: 220px; margin : auto; margin-right:0;display: flex; align-items: center;}
+        form div {flex:1; border:1px solid blue; }
+        form input {display:block;}
+        [type="text"] {margin-bottom: 5px;}
+        form div input {width:120px;}
+        [type="submit"] {height:50px;}
+
+        /* 반응형부분(작은기계장치의 적용되는 최대넓이는 0~550픽셀크기) */
+        @media(max-width:550px) {
+            #layout2 {flex-direction: column;}
+        }
+    </style>
+</head>
+<body>
+    <div id="layout1">
+        <header>
+            <h1>상단영역</h1>
+            <form action="#" method="post">
+                <div>
+                    <input type="text" placeholder="아이디를 입력하세요">
+                    <input type="password" placeholder="비밀번호를 입력하세요">
+                </div>                    
+                <input type="submit" value="확인">
+            </form>
+        </header>
+        <nav></nav>
+        <div id="layout2">
+            <main>
+                <h2>메인영역</h2>
+                <p>국무총리는 국무위원의 해임을 대통령에게 건의할 수 있다. 이 헌법시행 당시의 대법원장과 대법원판사가 아닌 법관은 제1항 단서의 규정에 불구하고 이 헌법에 의하여 임명된 것으로 본다.</p>
+                <p>모든 국민은 법률이 정하는 바에 의하여 국방의 의무를 진다. 국정의 중요한 사항에 관한 대통령의 자문에 응하기 위하여 국가원로로 구성되는 국가원로자문회의를 둘 수 있다.</p>
+                <p>모든 국민은 법률이 정하는 바에 의하여 국가기관에 문서로 청원할 권리를 가진다. 대통령은 헌법과 법률이 정하는 바에 의하여 국군을 통수한다. 이 헌법시행 당시의 법령과 조약은 이 헌법에 위배되지 아니하는 한 그 효력을 지속한다.</p>
+            </main>
+            <aside>
+                <h3>부가영역</h3>
+                <p>대통령은 조국의 평화적 통일을 위한 성실한 의무를 진다. 감사원의 조직·직무범위·감사위원의 자격·감사대상공무원의 범위 기타 필요한 사항은 법률로 정한다.</p>
+                <p>모든 국민은 종교의 자유를 가진다. 대통령은 조약을 체결·비준하고, 외교사절을 신임·접수 또는 파견하며, 선전포고와 강화를 한다. 국정의 중요한 사항에 관한 대통령의 자문에 응하기 위하여 국가원로로 구성되는 국가원로자문회의를 둘 수 있다.</p>
+            </aside>
+        </div>
+        <footer>
+            <h3>하단정보</h3>
+            <img src="images/summer.jpg" alt="여름">
+        </footer>
+    </div>
+</body>
+</html>
