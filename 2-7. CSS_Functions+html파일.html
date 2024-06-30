@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<style>
+a {color:blue; text-decoration:none; }
+a:after {content: " ★URL: " attr(href) "★"; font-size:0.8rem; color:skyblue;}
+section:first-of-type { width:calc(100% - 150pt); padding-bottom:50pt; border:2px solid orange;}
+div:first-of-type {width:45%; height:120pt; background:linear-gradient(red,yellow,blue); border-radius:20pt; text-align:center; line-height:100pt; margin-top:10pt; float:left;  }
+div:nth-of-type(2) {width:45%; height:120pt; background:radial-gradient(red,yellow,blue); border-radius:20pt; text-align:center; line-height:100pt; margin:10pt 0 0 10pt; float:left;  }
+div:nth-of-type(3) {width:45%; height:120pt; background:repeating-linear-gradient(red,yellow 10%,blue 20%); border-radius:20pt; text-align:center; line-height:100pt; margin:10pt 0 0 10pt; float:left;  }
+div:nth-of-type(4) {width:45%; height:120pt; background:repeating-radial-gradient(red,yellow 10%,blue 20%); border-radius:20pt; text-align:center; line-height:100pt; margin:10pt 0 0 10pt; float:left;  }
+</style>
+</head>
+
+<body>
+<article>
+	<h1>한국인이 가장 많이 이용하는 포탈 사이트</h1>
+	<p><a href="http://naver.com">네이버</a></p>
+	<p><a href="http://google.com">구글</a></p>
+</article>
+<section>
+	<h1>CSS 속성값의 사칙연산</h1>
+	이 요소 넓이는 CSS에서 사칙연산 되었습니다.
+</section>
+<div>선형 그라디언트를 표시하여 벡터이미지화</div>
+<div>원형 그라디언트를 표시하여 벡터이미지화</div>
+<div>선형 그라디언트를 반복표시하여 벡터이미지화</div>
+<div>원형 그라디언트를 반복표시하여 벡터이미지화</div>
+</body>
+</html>

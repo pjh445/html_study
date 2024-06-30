@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Animatable</title>
+<style>
+#layout {width:45%; border:1px solid red; margin:auto;}
+
+div:first-of-type { height:120pt;border-radius:20pt; text-align:center; line-height:110pt; animation:zz .5s infinite; }
+@keyframes zz {
+	0% {background:pink} 
+	50% {background:skyblue} 
+	100% {background:pink;} 
+}
+
+img:first-of-type {position:absolute; margin-top:80pt; animation:ee 1s 7; }
+@keyframes ee {
+	0%{clip:rect(40px,260px,110px,40px)} 
+	50% {clip:rect(0px,300px,150px,0px)} 
+	100%{clip:rect(40px,260px,110px,40px)}
+}
+
+p:first-of-type {width:500pt; height:100pt; animation:p1 .7s 5; }
+@keyframes p1 {
+	from {border:3px solid red; box-shadow:5pt 3pt 2pt black}  
+	to {border:3px dashed gold; box-shadow:1pt 1pt 0 black} 
+}
+
+p:last-of-type {animation:dd 1s infinite;}
+@keyframes dd {
+	from{columns:3; column-gap:30pt;} 
+	to{columns:0; column-gap:20pt;} 
+}
+</style>
+</head>
+
+<body>
+	<div id="layout">
+		<div>그라디언트 애니메이션</div>
+		<p>CSS 애니메이션</p>
+		<img src="img/1.jpg" width="300" height="150" alt="리니지">
+		<p>보내는 군영과 속잎나고, 반짝이는 살 위하여서. 피어나는 만천하의 대중을 산야에 할지니, 길지 찾아다녀도, 부패뿐이다. 싹이 커다란 풀이 이상, 이상이 살았으며, 이 끝에 피다. 밥을 얼마나 것은 뿐이다. 방황하였으며, 놀이 크고 칼이다. 우리 살았으며, 그들의 그들은 소금이라 말이다. 얼마나 밥을 사랑의 인간은 위하여 때문이다. 보내는 이상의 불어 있으며, 봄바람이다. 대고, 생생하며, 행복스럽고 꾸며 부패뿐이다. 그들은 과실이 천자만홍이 오직 힘차게 풍부하게 무엇을 뿐이다.</p>		
+	</div>
+</body>
+</html>
